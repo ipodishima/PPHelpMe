@@ -12,6 +12,7 @@
 #import "UIView+HelpMe.h"
 #import "UIImageView+HelpMe.h"
 #import "UIButton+HelpMe.h"
+#import "UILabel+HelpMe.h"
 #import "UINavigationController+HelpMe.h"
 #import "UIActivityIndicatorView+HelpMe.h"
 #import "UIColor+HelpMe.h"
