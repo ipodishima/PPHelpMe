@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (HelpMe)
-+ (id)colorWithHexa:(NSUInteger)hexa alpha:(CGFloat) alpha;
-+ (id)colorWithHexa:(NSUInteger)hexa;
++ (UIColor*)colorWithHexa:(NSUInteger)hexa alpha:(CGFloat) alpha;
++ (UIColor*)colorWithHexa:(NSUInteger)hexa;
 @end
