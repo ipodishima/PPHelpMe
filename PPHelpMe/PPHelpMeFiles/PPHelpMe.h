@@ -19,4 +19,6 @@
 #import "NSSet+HelpMe.h"
 #import "NSMutableSet+HelpMe.h"
 
+#define PPSystemVersionGreaterOrEqualThan(version) ([[[UIDevice currentDevice] systemVersion] floatValue] >= version)
+
 #endif
