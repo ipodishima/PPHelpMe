@@ -499,6 +499,7 @@
 				E0511B2A180840D7007D6A9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0511B2B180840D7007D6A9D /* Build configuration list for PBXNativeTarget "PPHelpMeTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +508,7 @@
 				E0511B2D180840D7007D6A9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
