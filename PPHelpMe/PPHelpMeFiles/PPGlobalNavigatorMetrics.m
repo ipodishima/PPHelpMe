@@ -62,3 +62,11 @@ CGFloat PPStatusBarHeight() {
     else
         return [[UIApplication sharedApplication] statusBarFrame].size.height;
 }
+
+CGFloat PPScreenWidth() {
+	return CGRectGetWidth(PPScreenBounds());
+}
+
+CGFloat PPScreenHeight() {
+	return CGRectGetHeight(PPScreenBounds());
+}

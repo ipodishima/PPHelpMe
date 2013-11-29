@@ -19,3 +19,6 @@ CGFloat PPToolBarHeight();
 
 CGFloat PPStatusBarHeight();
 CGFloat PPTabBarHeight();
+
+CGFloat PPScreenWidth();
+CGFloat PPScreenHeight();

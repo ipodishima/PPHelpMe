@@ -18,6 +18,7 @@
 #import "UIColor+HelpMe.h"
 #import "NSSet+HelpMe.h"
 #import "NSMutableSet+HelpMe.h"
+#import "PPGlobalNavigatorMetrics.h"
 
 #define PPSystemVersionGreaterOrEqualThan(version) ([[[UIDevice currentDevice] systemVersion] floatValue] >= version)
 
