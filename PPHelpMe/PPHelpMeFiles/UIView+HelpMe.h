@@ -20,4 +20,8 @@
 - (void)setSize:(CGSize)size;
 - (void)roundFrame;
 
+- (UIView*)findFirstViewInHierarchyOfClass:(Class)classToLookFor;
+- (UIImage *)image;
+- (void)printSubviewsWithIndentation:(int)indentation;
+
 @end
