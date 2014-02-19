@@ -1,9 +1,9 @@
 //
 //  NSURL+Additions.h
-//  iFeedBackNow
+//  PPHelpMe
 //
 //  Created by Marian Paul on 14/12/12.
-//  Copyright (c) 2012 MobileDGroup. All rights reserved.
+//  Copyright (c) 2012 iPuP SARL. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
