@@ -12,7 +12,8 @@ const CGFloat kDefaultCornerRadius = 5.0f;
 
 void apply_corner_radius(UIView *view, CGFloat radius) {
     view.layer.cornerRadius = radius;
-    view.layer.masksToBounds = TRUE;
+    view.layer.masksToBounds = YES;
+    view.layer.shouldRasterize = YES;
 }
 
 void apply_default_corner_radius(UIView *view) {
