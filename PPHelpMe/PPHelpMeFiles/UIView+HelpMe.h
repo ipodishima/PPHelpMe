@@ -7,6 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+
+extern const CGFloat kDefaultCornerRadius;
+
+void apply_corner_radius(UIView *view, CGFloat radius);
+void apply_default_corner_radius(UIView *view);
 
 @interface UIView (HelpMe)
 + (id) newWithFrame:(CGRect)frame;
