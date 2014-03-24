@@ -11,6 +11,8 @@
 
 
 CGRect PPScreenBounds();
+UIInterfaceOrientation PPInterfaceOrientation();
+
 CGRect PPScreenBoundsWithOrientation(UIInterfaceOrientation orientation);
 
 CGRect PPNavigationFrame();

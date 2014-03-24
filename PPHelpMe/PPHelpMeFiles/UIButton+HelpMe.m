@@ -7,6 +7,7 @@
 //
 
 #import "UIButton+HelpMe.h"
+#import "UIView+HelpMe.h"
 
 @implementation UIButton (HelpMe)
 
