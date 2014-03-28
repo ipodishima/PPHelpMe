@@ -21,6 +21,7 @@
 #import "PPGlobalNavigatorMetrics.h"
 #import "NSDictionary+HelpMe.h"
 #import "NSMutableDictionary+HelpMe.h"
+#import "UIBarButtonItem+HelpMe.h"
 
 #define PPSystemVersionGreaterOrEqualThan(version) ([[[UIDevice currentDevice] systemVersion] floatValue] >= version)
 

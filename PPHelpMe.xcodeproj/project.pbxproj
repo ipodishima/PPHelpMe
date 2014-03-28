@@ -27,6 +27,7 @@
 		E0511B4518084100007D6A9D /* UIImageView+HelpMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E0511B3B18084100007D6A9D /* UIImageView+HelpMe.m */; };
 		E0511B4618084100007D6A9D /* UINavigationController+HelpMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E0511B3D18084100007D6A9D /* UINavigationController+HelpMe.m */; };
 		E0511B4718084100007D6A9D /* UIView+HelpMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E0511B3F18084100007D6A9D /* UIView+HelpMe.m */; };
+		E0732EF618E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E0732EF518E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		E0511B3D18084100007D6A9D /* UINavigationController+HelpMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HelpMe.m"; sourceTree = "<group>"; };
 		E0511B3E18084100007D6A9D /* UIView+HelpMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HelpMe.h"; sourceTree = "<group>"; };
 		E0511B3F18084100007D6A9D /* UIView+HelpMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HelpMe.m"; sourceTree = "<group>"; };
+		E0732EF418E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HelpMe.h"; sourceTree = "<group>"; };
+		E0732EF518E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HelpMe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,8 @@
 				E0511B3F18084100007D6A9D /* UIView+HelpMe.m */,
 				E0511B3C18084100007D6A9D /* UINavigationController+HelpMe.h */,
 				E0511B3D18084100007D6A9D /* UINavigationController+HelpMe.m */,
+				E0732EF418E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.h */,
+				E0732EF518E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.m */,
 			);
 			path = PPHelpMeFiles;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0732EF618E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.m in Sources */,
 				E0511B4618084100007D6A9D /* UINavigationController+HelpMe.m in Sources */,
 				E0511B4118084100007D6A9D /* NSSet+HelpMe.m in Sources */,
 				E0511B4518084100007D6A9D /* UIImageView+HelpMe.m in Sources */,

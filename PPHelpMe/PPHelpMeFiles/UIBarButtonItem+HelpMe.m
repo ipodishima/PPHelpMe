@@ -12,10 +12,7 @@
 
 + (UIBarButtonItem*) buildBarButtonImageName:(NSString *)imageName target:(id)target action:(SEL)action
 {
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *image = [UIImage imageNamed:imageName];
-    [button setBackgroundImage:image forState:UIControlStateNormal];
-    [button setFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
+    UIButton *button = [UIButton buttonWithBackgroundImageName:imageName];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     return buttonItem;
