@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
         #ifdef __OBJC__
             #import "PPHelpMe.h"
         #endif
-                extern int ddLogLevel;
         EOS
 
   s.requires_arc = true
