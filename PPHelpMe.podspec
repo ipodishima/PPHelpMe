@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.source_files = 'PPhelpMe/PPHelpMeFiles/*.{h,m}'
   s.framework    = "QuartzCore"
 
-  ss.prefix_header_contents = <<-EOS
+  s.prefix_header_contents = <<-EOS
         #ifdef __OBJC__
             #import "PPHelpMe.h"
         #endif
