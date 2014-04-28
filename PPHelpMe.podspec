@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
 
   # pointing to master for now until a tag is created
   s.source  = {
-    :git => 'https://github.com/ipodishima/PPHelpMe.git',
-    :tag => '1.0.0'
+    :git => 'https://github.com/mdewolfe/PPHelpMe.git',
+    :tag => '1.0.1'
   }
 
   s.source_files = 'PPhelpMe/PPHelpMeFiles/*.{h,m}'
