@@ -13,6 +13,7 @@ extern const CGFloat kDefaultCornerRadius;
 
 void apply_corner_radius(UIView *view, CGFloat radius);
 void apply_default_corner_radius(UIView *view);
+void draw1PxStroke(CGContextRef context, CGPoint startPoint, CGPoint endPoint, CGColorRef color);
 
 @interface UIView (HelpMe)
 + (id) newWithFrame:(CGRect)frame;
