@@ -8,6 +8,8 @@
 
 #import "PPGlobalNavigatorMetrics.h"
 
+#define PPHELP_ME_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:(v) options:NSNumericSearch] != NSOrderedAscending)
+
 UIInterfaceOrientation PPInterfaceOrientation() {
 	UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
 	return orientation;
@@ -15,7 +17,7 @@ UIInterfaceOrientation PPInterfaceOrientation() {
 
 CGRect PPScreenBounds() {
 	CGRect bounds = [UIScreen mainScreen].bounds;
-	if (UIInterfaceOrientationIsLandscape(PPInterfaceOrientation())) {
+	if (UIInterfaceOrientationIsLandscape(PPInterfaceOrientation()) && !PPHELP_ME_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
 		CGFloat width = bounds.size.width;
 		bounds.size.width = bounds.size.height;
 		bounds.size.height = width;
@@ -25,7 +27,7 @@ CGRect PPScreenBounds() {
 
 CGRect PPScreenBoundsWithOrientation(UIInterfaceOrientation orientation) {
 	CGRect bounds = [UIScreen mainScreen].bounds;
-	if (UIInterfaceOrientationIsLandscape(orientation)) {
+	if (UIInterfaceOrientationIsLandscape(orientation) && !PPHELP_ME_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
 		CGFloat width = bounds.size.width;
 		bounds.size.width = bounds.size.height;
 		bounds.size.height = width;
@@ -53,14 +55,19 @@ CGFloat PPToolBarHeight() {
 }
 
 CGFloat PPTabBarHeight() {
-	return 49.0f;
+    return 49.0f;
 }
 
 CGFloat PPStatusBarHeight() {
-    if (UIInterfaceOrientationIsLandscape(PPInterfaceOrientation()))
-        return [[UIApplication sharedApplication] statusBarFrame].size.width;
-    else
+    if (PPHELP_ME_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
         return [[UIApplication sharedApplication] statusBarFrame].size.height;
+    }
+    else {
+        if (UIInterfaceOrientationIsLandscape(PPInterfaceOrientation()))
+            return [[UIApplication sharedApplication] statusBarFrame].size.width;
+        else
+            return [[UIApplication sharedApplication] statusBarFrame].size.height;
+    }
 }
 
 CGFloat PPScreenWidth() {

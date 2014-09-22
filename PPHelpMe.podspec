@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = "PPHelpMe"
-  s.version  = "1.0.0"
+  s.version  = "1.0.1"
   s.summary  = "Convenience methods for common operations with Foundation objects."
   s.homepage = "http://github.com/ipodishima/PPHelpMe"
   s.license  = "MIT"
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # pointing to master for now until a tag is created
   s.source  = {
     :git => 'https://github.com/ipodishima/PPHelpMe.git',
-    :tag => '1.0.0'
+    :tag => '1.0.1'
   }
 
   s.source_files = 'PPhelpMe/PPHelpMeFiles/*.{h,m}'
