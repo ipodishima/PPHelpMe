@@ -16,8 +16,8 @@ UIInterfaceOrientation PPInterfaceOrientation() {
 }
 
 CGRect PPScreenBounds() {
-	CGRect bounds = [UIScreen mainScreen].bounds;
-	if (UIInterfaceOrientationIsLandscape(PPInterfaceOrientation()) && !PPHELP_ME_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
+	CGRect bounds = PPFixedScreenBounds();
+	if (UIInterfaceOrientationIsLandscape(PPInterfaceOrientation())) {
 		CGFloat width = bounds.size.width;
 		bounds.size.width = bounds.size.height;
 		bounds.size.height = width;
@@ -25,9 +25,18 @@ CGRect PPScreenBounds() {
 	return bounds;
 }
 
+CGRect PPFixedScreenBounds() {
+    UIScreen *screen = [UIScreen mainScreen];
+    
+    if ([screen respondsToSelector:@selector(fixedCoordinateSpace)]) {
+        return [screen.coordinateSpace convertRect:screen.bounds toCoordinateSpace:screen.fixedCoordinateSpace];
+    }
+    return screen.bounds;
+}
+
 CGRect PPScreenBoundsWithOrientation(UIInterfaceOrientation orientation) {
-	CGRect bounds = [UIScreen mainScreen].bounds;
-	if (UIInterfaceOrientationIsLandscape(orientation) && !PPHELP_ME_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
+	CGRect bounds = PPFixedScreenBounds();
+	if (UIInterfaceOrientationIsLandscape(orientation)) {
 		CGFloat width = bounds.size.width;
 		bounds.size.width = bounds.size.height;
 		bounds.size.height = width;

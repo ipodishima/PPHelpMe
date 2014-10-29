@@ -29,6 +29,7 @@
 		E0511B4618084100007D6A9D /* UINavigationController+HelpMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E0511B3D18084100007D6A9D /* UINavigationController+HelpMe.m */; };
 		E0511B4718084100007D6A9D /* UIView+HelpMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E0511B3F18084100007D6A9D /* UIView+HelpMe.m */; };
 		E0732EF618E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.m in Sources */ = {isa = PBXBuildFile; fileRef = E0732EF518E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.m */; };
+		E0D342D11A011E8C00E629EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D342D01A011E8C00E629EE /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		E0511B3F18084100007D6A9D /* UIView+HelpMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HelpMe.m"; sourceTree = "<group>"; };
 		E0732EF418E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HelpMe.h"; sourceTree = "<group>"; };
 		E0732EF518E5D0E1000B42A2 /* UIBarButtonItem+HelpMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HelpMe.m"; sourceTree = "<group>"; };
+		E0D342CF1A011E8C00E629EE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E0D342D01A011E8C00E629EE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				E0511B2E18084100007D6A9D /* PPHelpMeFiles */,
 				E0511B0E180840D7007D6A9D /* AppDelegate.h */,
 				E0511B0F180840D7007D6A9D /* AppDelegate.m */,
+				E0D342CF1A011E8C00E629EE /* ViewController.h */,
+				E0D342D01A011E8C00E629EE /* ViewController.m */,
 				E0511B11180840D7007D6A9D /* Images.xcassets */,
 				E0511B06180840D7007D6A9D /* Supporting Files */,
 			);
@@ -305,6 +310,7 @@
 				E0511B4118084100007D6A9D /* NSSet+HelpMe.m in Sources */,
 				E0511B4518084100007D6A9D /* UIImageView+HelpMe.m in Sources */,
 				E0511B4718084100007D6A9D /* UIView+HelpMe.m in Sources */,
+				E0D342D11A011E8C00E629EE /* ViewController.m in Sources */,
 				E0511B4018084100007D6A9D /* NSMutableSet+HelpMe.m in Sources */,
 				E0511B10180840D7007D6A9D /* AppDelegate.m in Sources */,
 				E0511B4218084100007D6A9D /* UIActivityIndicatorView+HelpMe.m in Sources */,
