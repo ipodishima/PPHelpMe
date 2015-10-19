@@ -13,7 +13,7 @@
 - (UIViewController *)popToFirstControllerOfClass:(Class)cClass animated:(BOOL)animated
 {
     UIViewController *foundedController = nil;
-    for (int i = [self.viewControllers count] - 1 ; i >= 0 ; i--)
+    for (int i = (int)[self.viewControllers count] - 1 ; i >= 0 ; i--)
     {
         id controller = self.viewControllers[i];
         if ([controller isKindOfClass:cClass]) {
